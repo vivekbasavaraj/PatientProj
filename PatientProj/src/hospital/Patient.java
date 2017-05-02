@@ -8,14 +8,14 @@ public class Patient
 	private String patientName;
 	private int patientAge;
 	private Gender  patientGender;
-	private AllergySeverity severity;
+	//private AllergySeverity severity;
 	
-	public Patient(String patientName,int patientAge,Gender  patientGender,AllergySeverity severity)
+	public Patient(String patientName,int patientAge,Gender  patientGender/*,AllergySeverity severity*/)
 	{
 		this.patientName = patientName;
 		this.patientAge = patientAge ;
 		this.patientGender = patientGender;
-		this.severity = severity;
+		//this.severity = severity;
 	}
 	
 	public void setPatientName(String patientName) {
@@ -42,12 +42,12 @@ public class Patient
 		return patientGender;
 	}
 
-	public void setSeverity(AllergySeverity severity) {
+/*	public void setSeverity(AllergySeverity severity) {
 		this.severity = severity;
 	}
 
 	public AllergySeverity getSeverity() {
 		return severity;
-	}
+	}*/
 
 }

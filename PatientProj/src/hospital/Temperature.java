@@ -6,9 +6,9 @@ public class Temperature extends Patient
 	private ReadingLocation readAt;
 	public static double fever = 99.0;
 	
-	public Temperature(String patientName,int patientAge,Gender patientGender,AllergySeverity severity, double bodyTemperature, ReadingLocation readAt)
+	public Temperature(String patientName,int patientAge,Gender patientGender, double bodyTemperature, ReadingLocation readAt)
 	{	
-		super(patientName, patientAge, patientGender, severity);
+		super(patientName, patientAge, patientGender);
 		this.bodyTemperature = bodyTemperature;
 		this.readAt = readAt;
 	}
@@ -29,7 +29,7 @@ public class Temperature extends Patient
 		return readAt;
 	}
 	
-	public void hasFever()
+	/*public void hasFever()
 	{
 		if(bodyTemperature >= fever)
 		{
@@ -39,5 +39,5 @@ public class Temperature extends Patient
 		{
 			System.out.println(" "+super.getPatientName()+ " has normal body temperature.");
 		}
-	}
+	}*/
 }
